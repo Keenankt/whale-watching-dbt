@@ -4,7 +4,7 @@ WITH source AS (
     SELECT 
         data
     FROM 
-        {{ source('bronze', 'polymarket_orderbook_stg')}}
+        {{ source('bronze', 'polymarket_orderbook_raw')}}
 )
 
 SELECT 
