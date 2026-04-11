@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: polymarket_orderbook
+    description: "orders pulled from polymarket"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: maker
+      - name: taker
+      - name: maker_asset_id
+      - name: taker_asset_id
+      - name: maker_amount_filled
+      - name: taker_amount_filled
+      - name: fee
+      - name: timestamp
+      - name: transaction_hash
+    
+
