@@ -5,4 +5,4 @@ sources:
     database: dev_db
     schema: bronze
     tables:
-      - name: polymarket_orderbook
+      - name: polymarket_orderbook_stg
