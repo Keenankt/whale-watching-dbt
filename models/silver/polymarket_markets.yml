@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: polymarket_markets
+    description: "markets pulled from polymarket"
+    columns:
+      - name: id
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
+      - name: question
+      - name: condition_id
+      - name: slug
+      - name: end_date
+      - name: liquidity
+      - name: start_date
+      - name: description
+      - name: outcomes
+      - name: outcome_prices
+      - name: volume
+      - name: active
+      - name: closed
+      - name: market_maker_address
+      - name: created_at
+      - name: featured
+      - name: group_item_title
+      - name: question_id
+      - name: volume_num
+      - name: liquidity_num
+      - name: volume_24hr
+      - name: volume_1wk
+      - name: volume_1mo
+      - name: volume_1yr
+      - name: clob_token_ids
+      - name: accepting_orders

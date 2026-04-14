@@ -6,3 +6,4 @@ sources:
     schema: bronze
     tables:
       - name: polymarket_orderbook_raw
+      - name: polymarket_markets_raw
