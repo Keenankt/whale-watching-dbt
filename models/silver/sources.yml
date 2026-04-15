@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: bronze
-    database: dev_db
+    database: prod_db
     schema: bronze
     tables:
       - name: polymarket_orderbook_raw
-      - name: polymarket_markets_raw
+      - name: polymarket_markets_raw  
