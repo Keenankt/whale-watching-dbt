@@ -14,8 +14,8 @@ SELECT
     data:liquidity::FLOAT                AS liquidity,
     data:startDate::TIMESTAMP_NTZ        AS start_date,
     data:description::VARCHAR            AS description,
-    data:outcomes::ARRAY                 AS outcomes,
-    data:outcomePrices::ARRAY            AS outcome_prices,
+    data:outcomes::VARIANT               AS outcomes,
+    data:outcomePrices::VARIANT          AS outcome_prices,
     data:volume::FLOAT                   AS volume,
     data:active::BOOLEAN                 AS active,
     data:closed::BOOLEAN                 AS closed,
@@ -30,7 +30,7 @@ SELECT
     data:volume1wk::FLOAT                AS volume_1wk,
     data:volume1mo::FLOAT                AS volume_1mo,
     data:volume1yr::FLOAT                AS volume_1yr,
-    data:clobTokenIds::ARRAY             AS clob_token_ids,
+    data:clobTokenIds::VARIANT           AS clob_token_ids,
     data:acceptingOrders::BOOLEAN        AS accepting_orders
 FROM source
 WHERE data:id IS NOT NULL
