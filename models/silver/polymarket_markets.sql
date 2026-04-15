@@ -1,4 +1,4 @@
-{{config(materialized = 'table', schema='SILVER')}}
+{{config(materialized = 'incremental', unique_key='id', schema='SILVER')}}
 
 WITH source AS (
     SELECT data
